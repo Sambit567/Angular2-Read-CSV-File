@@ -1,0 +1,8 @@
+load_id,loan_amount,loan_tenure,per_month_interest,loan_interest,number_of_emi,emi,repayment_profile,due_date,principal_outstanding,principal-paid,interest_paid
+1,20000,12,0.8,0.04,7,500,yes,02-05-2018,2000,1958,560
+2,30000,12,0.8,0.04,5,500,yes,03-05-2018,5000,1958,560
+3,60000,12,0.8,0.04,8,500,yes,04-05-2018,3000,1958,560
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,
+,,,,,,,,,,,

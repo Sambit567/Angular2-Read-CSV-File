@@ -1,0 +1,39 @@
+<h4>Read .CSV File using Angular2, JQuery and Bootstrap</h4>
+
+<table>
+    <tr>
+        <td>
+            <input type="file" 
+                #fileImportInput
+                name="File Upload" 
+                id="txtFileUpload" 
+                class="btn btn-primary" 
+                (change)="fileChangeListener($event)" 
+                accept=".csv"
+                value={{selectedImageFile}}/>
+        </td>
+        <td style="padding: 5px;">
+            <input type="button" 
+                name="Reset" 
+                id="txtFileReset" 
+                class="btn btn-primary" 
+                (click)="fileReset()" 
+                value="Reset"/>
+        </td>
+    </tr>
+</table>
+
+<div>
+    <table class="table table-responsive table-hover" border="1" 
+        style="width : 50%;">
+        <tbody>
+            <ng-container *ngFor="let csvRec of csvRecords;let i=index">
+                <tr>
+                    <ng-container *ngFor="let data of csvRec;let j=index"> 
+                        <td>{{data}}</td>
+                    </ng-container>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</div>
